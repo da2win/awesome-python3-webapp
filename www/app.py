@@ -9,7 +9,7 @@ import asyncio, os, json, time
 from datetime import datetime
 from aiohttp import web
 
-def index():
+def index(request):
 	return web.Response(body=b'<h1>Awesome</h1>')
 
 @asyncio.coroutine
